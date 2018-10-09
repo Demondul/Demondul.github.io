@@ -19,6 +19,7 @@
 .bg-div:nth-child(1) {
     min-height: 100vh;
     background-image: url(../img/tech.jpg);
+    position: relative;
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -36,6 +37,7 @@
 .bg-div:nth-child(3){
     height: 650px;
     background-image: url(../img/skills.jpg);
+    position: relative;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -51,6 +53,7 @@
 .bg-div:nth-child(5){
     height: 650px;
     background-image: url(../img/projects.jpg);
+    position: relative;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -66,13 +69,14 @@
 .bg-div:nth-child(7){
     height: 650px;
     background-image: url(../img/internet-technology.jpg);
+    position: relative;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
 }
 
 .bg-div:nth-child(8){
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 60px;
     border: 1px solid black;
     background-color: #cfd6cf;
@@ -143,26 +147,44 @@
     border-radius: 260px;
     width: 260px;
     height: 260px;
+    
 }
 
 #Home h1{
     color: #b0eaf4;
     position: absolute;
-    font-size: 8rem;
+    font-size: 8vw;
     text-align: center;
+    text-shadow: 0 0 10px #000;
   }
 
 #Home span{
     color: #b0eaf4;
-    font-size: 4rem;
+    font-size: 4vw;
     text-align: center;
+    text-shadow: 0 0 10px #000;
+}
+
+#About h1{
+    font-size: 4vw;
 }
 
 #About p{
     text-indent: 40px;
-    font-size: 25px;
+    font-size: 1.8vw;
 }
 
+#Projects img{
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-item {
+    height: 60vh;
+    font-size: 1.5vw;
+}
 
 /* FONTS */
 

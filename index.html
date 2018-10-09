@@ -56,17 +56,17 @@
         </nav>
         <main>
             <div class="bg-div" id='Home'>
-                <h1 id="name"> 
-                    <p class="display-1"> Carlo Del Mundo </p>
+                <h1> 
+                    <p> Carlo Del Mundo </p>
                     <span>
-                        <p> Sofware Engineer</p>
+                        <p> Software Engineer</p>
                     </span>
                 </h1>
             </div>
             <div class="bg-div" id='About'>
                 <h3 class="bg-primary text-white p-2">About Me</h3>
                 <header class="text-center p-5">
-                    <h1 class="display-4">This is me, Carlo.</h1>
+                    <h1>This is me, Carlo.</h1>
                     <div>
                         <img class="round-pic" src="img/me.png" alt="">
                     </div>
@@ -86,14 +86,15 @@
                     </p>
                 </section>
             </div>
-            <div class="bg-div" id='Third'>
-                
+
+            <div class="bg-div" id='Third'>    
             </div>
+
             <div class="bg-div" id='Skills'>
                 <h3 class="bg-primary text-white p-2">Technical Skills</h3>
                 <section class="bg-light p-1 my-3">
                     <div class="row">
-                        <div class="skill col-sm-2">
+                        <div class="skill col-md-2">
                             <header class="bg-primary text-white p-1 text-center">
                                 Language
                             </header>
@@ -110,7 +111,7 @@
                                 <li>SQL</li>
                             </ul>
                         </div>
-                        <div class="skill col-sm-2">
+                        <div class="skill col-md-2">
                             <header class="bg-primary text-white p-1 text-center">
                                 Database
                             </header>
@@ -121,7 +122,7 @@
                                 <li>CoreData</li>
                             </ul>
                         </div>
-                        <div class="skill col-sm-2">
+                        <div class="skill col-md-2">
                             <header class="bg-primary text-white p-1 text-center">
                                 Front End
                             </header>
@@ -138,7 +139,7 @@
                                 <li>SASS</li>
                             </ul>
                         </div>
-                        <div class="skill col-sm-2">
+                        <div class="skill col-md-2">
                             <header class="bg-primary text-white p-1 text-center">
                                 Back End
                             </header>
@@ -150,7 +151,7 @@
                                 <li>Flask</li>
                             </ul>
                         </div>
-                        <div class="skill col-sm-2">
+                        <div class="skill col-md-2">
                             <header class="bg-primary text-white p-1 text-center">
                                 Methodology
                             </header>
@@ -165,7 +166,7 @@
                                 <li>Agile</li>
                             </ul>
                         </div>
-                        <div class="skill col-sm-2">
+                        <div class="skill col-md-2">
                             <header class="bg-primary text-white p-1 text-center">
                                 Development & Deployment
                             </header>
@@ -184,18 +185,89 @@
                     </div>
                 </section>
             </div>
+
             <div class="bg-div" id='Fifth'>
-                
             </div>
+
             <div class="bg-div" id='Projects'>
                 <h3 class="bg-primary text-white p-2">Projects</h3>
-                <section class="bg-light p-5 my-3">
+                <section class="bg-light p-1 my-3">
+                    <div class="container-fluid">
+                        <div class="row">
+                         
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div id="my-carousel" class="carousel slide" data-ride="carousel" >
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#my-carousel" data-slide-to="1"></li>
+                                    </ol>
 
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <div class="row bg-dark text-light">
+                                                <div class="col-sm-6 col-md-6 col-lg-6 project-item">
+                                                    <img src="img/ChiesCakes.gif" alt="Chie's Cakes">
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 col-lg-6 project-item p-5">
+                                                    <p> 
+                                                        <span class="text-info">Description:</span> An e-commerce website that can take orders and reservation
+                                                        of personalized cakes of customers. Customers can post reviews and rating
+                                                        of their experience with the cake. It also has an admin page that manages 
+                                                        the website's pictures, captions, and marketing pitch.
+                                                    </p>
+                                                    <p>
+                                                        <span class="text-info">Programming Language:</span> Python3, Javasctipt, HTML5, CSS3
+                                                    </p>
+                                                    <p>
+                                                        <span class="text-info">Framework:</span> Django, BCrypt, iCalendar, Pillow, JQuery, Bootstrap3
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row bg-dark text-light">
+                                                <div class="col-sm-6 col-md-6 col-lg-6 project-item">
+                                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OK6GCVKpydc">
+                                                    </iframe>
+                                                </div>
+                                                <div class="col-sm-6 col-md-6 col-lg-6 project-item p-5">
+                                                    <p> 
+                                                        <span class="text-info">Description:</span> An Arduino R3 robot car that is controlled by an iOS App
+                                                        through bluetooth technology that can move in all directions. It also has an autopilot feature that 
+                                                        drives itself forward and it stops on time to prevent collision and driving away to whatever is in front
+                                                        of the car. The Arduino R3 robot car is programmed written in C++.
+                                                    </p>
+                                                    <p>
+                                                        <span class="text-info">Programming Language:</span> C++, iOS Swift
+                                                    </p>
+                                                    <p>
+                                                        <span class="text-info">Framework:</span> CoreBluetooth, Servo
+                                                    </p>
+                                                    <p>
+                                                        <span class="text-info">Hardware:</span> Arduino R3 Car Kit
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a href="#my-carousel" class="carousel-control-prev text-dark" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </a>
+                                    <a href="#my-carousel" class="carousel-control-next text-dark" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </section>
             </div>
-            <div class="bg-div" id='Seventh'>
-                
+
+            <div class="bg-div" id='Seventh'>    
             </div>
+            
             <div class="bg-div" id='Contact'>
                 <h3 class="bg-primary text-white p-2">Contact Details</h3>
                 <section class="bg-light p-5 my-3">
