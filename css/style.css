@@ -186,6 +186,16 @@
     font-size: 1.5vw;
 }
 
+#Contact a{
+    display: block;
+    margin: auto;
+    font-size: 4vw;
+}
+
+.contact-icon{
+    text-align: center
+}
+
 /* FONTS */
 
 /* cyrillic-ext */
