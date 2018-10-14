@@ -1,7 +1,11 @@
 const Home = document.getElementById('Home');
+const About = document.getElementById('About');
 const third = document.getElementById('Third');
+const Skills = document.getElementById('Skills');
 const fifth = document.getElementById('Fifth');
+const Projects = document.getElementById('Projects');
 const seventh = document.getElementById('Seventh');
+const Contact = document.getElementById('Contact')
 
 window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
@@ -9,22 +13,22 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function (){
-    let offset = window.pageYOffset - 2000;
+    let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight);
     third.style.backgroundPositionY = offset * -0.25 + "px";
 });
 
 window.addEventListener("scroll", function (){
-    let offset = window.pageYOffset - 3500;
+    let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight + third.offsetHeight + Skills.offsetHeight);
     fifth.style.backgroundPositionY = offset * -0.25 + "px";
 });
 
 window.addEventListener("scroll", function (){
-    let offset = window.pageYOffset - 5500;
+    let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight + third.offsetHeight + Skills.offsetHeight + fifth.offsetHeight + Projects.offsetHeight);
     seventh.style.backgroundPositionY = offset * -0.25 + "px";
 });
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "150px";
+    document.getElementById("mySidenav").style.width = "1750px";
 }
 
 function closeNav() {

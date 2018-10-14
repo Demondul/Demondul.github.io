@@ -41,6 +41,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .bg-div:nth-child(4){
@@ -86,17 +87,6 @@
     display: inline-block;
 }
 
-.skill header{
-    font-size: 15px;
-}
-
-.skill ul{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    font-size: 15px;
-}
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -132,11 +122,6 @@
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 #side-nav-switch{
     font-size:30px;
     cursor:pointer;
@@ -165,13 +150,34 @@
     text-shadow: 0 0 10px #000;
 }
 
-#About h1{
-    font-size: 4vw;
-}
-
 #About p{
     text-indent: 40px;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+.skill header{
+    font-size: 15px;
+}
+
+.skill ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.skill-exp{
+    margin: auto;
+    width: 125px;
+    height: 125px;
+}
+
+.skill-exp img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
 }
 
 #Projects img{
@@ -186,14 +192,40 @@
     font-size: 1.5vw;
 }
 
-#Contact a{
+#Contact i{
     display: block;
     margin: auto;
     font-size: 4vw;
 }
 
+#Contact a{
+    text-decoration: none;
+}
+
 .contact-icon{
     text-align: center
+}
+
+@media only screen and (max-width:400px){
+    #About p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    #About h1{
+        font-size: 20px;
+    }
+    #About img{
+        height: 160px;
+        width: 160px;
+    }
+    .project-item{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 /* FONTS */
