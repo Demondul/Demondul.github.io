@@ -30,7 +30,6 @@
 .bg-div:nth-child(2){
     min-height: 100vh;
     padding: 60px;
-    border: 1px solid black;
     background-color: #cfd6cf;
 }
 
@@ -47,7 +46,6 @@
 .bg-div:nth-child(4){
     min-height: 80vh;
     padding: 60px;
-    border: 1px solid black;
     background-color: #cfd6cf;
 }
 
@@ -63,7 +61,6 @@
 .bg-div:nth-child(6){
     min-height: 80vh;
     padding: 60px;
-    border: 1px solid black;
     background-color: #cfd6cf;
 }
 
@@ -79,7 +76,6 @@
 .bg-div:nth-child(8){
     min-height: 50vh;
     padding: 60px;
-    border: 1px solid black;
     background-color: #cfd6cf;
 }
 
@@ -206,20 +202,54 @@
     text-align: center
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:420px){
+    .bg-div:nth-child(3){
+        height: 200px;
+        background-image: url(../img/skills.jpg);
+        background-size: 100%;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }    
+    .bg-div:nth-child(5){
+        height: 200px;
+        background-image: url(../img/projects.jpg);
+        background-size: 100%;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .bg-div:nth-child(7){
+        height: 200px;
+        background-image: url(../img/internet-technology.jpg);
+        background-size: 100%;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .bg-div-header {
+        font-size: 18px;
+    }
     #About p{
-        font-size: 15px;
+        text-indent: 10px;
+        font-size: 12px;
         text-align: justify;
     }
     #About h1{
-        font-size: 20px;
+        font-size: 15px;
     }
     #About img{
-        height: 160px;
-        width: 160px;
+        height: 110px;
+        width: 110px;
     }
     .project-item{
-        font-size: 13px;
+        font-size: 10px;
+    }
+    .skill {
+        font-size: 10px;
+    }
+    #Contact a{
+        font-size: 10px
     }
 }
 

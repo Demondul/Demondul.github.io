@@ -13,22 +13,28 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function (){
-    let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight);
-    third.style.backgroundPositionY = offset * -0.25 + "px";
+    if(Home.offsetWidth>420){
+        let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight);
+        third.style.backgroundPositionY = offset * -0.25 + "px";
+    }
 });
 
 window.addEventListener("scroll", function (){
-    let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight + third.offsetHeight + Skills.offsetHeight);
-    fifth.style.backgroundPositionY = offset * -0.25 + "px";
+    if(Home.offsetWidth>420){
+        let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight + third.offsetHeight + Skills.offsetHeight);
+        fifth.style.backgroundPositionY = offset * -0.25 + "px";
+    }
 });
 
 window.addEventListener("scroll", function (){
-    let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight + third.offsetHeight + Skills.offsetHeight + fifth.offsetHeight + Projects.offsetHeight);
-    seventh.style.backgroundPositionY = offset * -0.25 + "px";
+    if(Home.offsetWidth>420){
+        let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight + third.offsetHeight + Skills.offsetHeight + fifth.offsetHeight + Projects.offsetHeight);
+        seventh.style.backgroundPositionY = offset * -0.25 + "px";
+    }
 });
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "1750px";
+    document.getElementById("mySidenav").style.width = "175px";
 }
 
 function closeNav() {
