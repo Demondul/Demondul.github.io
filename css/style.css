@@ -203,14 +203,22 @@
 }
 
 @media only screen and (max-width:420px){
+    .bg-div:nth-child(2){
+        padding: 10px;
+        min-height: 25vh;
+    }
     .bg-div:nth-child(3){
         height: 200px;
         background-image: url(../img/skills.jpg);
-        background-size: 100%;
+        background-size: 100vh;
         background-attachment: scroll;
         background-position: center center;
         background-repeat: no-repeat;
     }    
+    .bg-div:nth-child(4){
+        padding: 10px;
+        min-height: 25vh;
+    }
     .bg-div:nth-child(5){
         height: 200px;
         background-image: url(../img/projects.jpg);
@@ -219,6 +227,10 @@
         background-position: center center;
         background-repeat: no-repeat;
     }
+    .bg-div:nth-child(6){
+        padding: 10px;
+        min-height: 25vh;
+    }
     .bg-div:nth-child(7){
         height: 200px;
         background-image: url(../img/internet-technology.jpg);
@@ -226,6 +238,10 @@
         background-attachment: scroll;
         background-position: center center;
         background-repeat: no-repeat;
+    }
+    .bg-div:nth-child(8){
+        padding: 10px;
+        min-height: 25vh;
     }
     .bg-div-header {
         font-size: 18px;
@@ -244,7 +260,7 @@
         width: 110px;
     }
     .project-item{
-        font-size: 10px;
+        font-size: 16px;
     }
     .skill {
         font-size: 10px;
