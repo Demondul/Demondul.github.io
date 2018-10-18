@@ -28,7 +28,7 @@
 }
 
 .bg-div:nth-child(2){
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 60px;
     background-color: #cfd6cf;
 }
@@ -128,7 +128,6 @@
     border-radius: 260px;
     width: 260px;
     height: 260px;
-    
 }
 
 #Home h1{
@@ -148,7 +147,7 @@
 
 #About p{
     text-indent: 40px;
-    font-size: 1.5vw;
+    font-size: 2vw;
     text-align: justify;
 }
 
@@ -185,7 +184,7 @@
 
 .project-item {
     height: 60vh;
-    font-size: 1.5vw;
+    font-size: 3vh;
 }
 
 #Contact i{
@@ -198,11 +197,15 @@
     text-decoration: none;
 }
 
+.contact-label{
+    font-size: 1vh;
+}
+
 .contact-icon{
     text-align: center
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:800px){
     .bg-div:nth-child(2){
         padding: 10px;
         min-height: 25vh;
@@ -260,7 +263,7 @@
         width: 110px;
     }
     .project-item{
-        font-size: 16px;
+        font-size: 2vh;
     }
     .skill {
         font-size: 10px;
