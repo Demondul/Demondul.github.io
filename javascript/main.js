@@ -9,18 +9,13 @@ const Contact = document.getElementById('Contact')
 
 window.addEventListener("scroll", function () {
     let offset = window.pageYOffset;
-    console.log(window.pageYOffset);
     Home.style.backgroundPositionY = offset * -0.25 + "px";
-    console.log(Home.style.backgroundPositionY);
 });
 
 window.addEventListener("scroll", function (){
     if(Home.offsetWidth>420){
         let offset = window.pageYOffset - (Home.offsetHeight + About.offsetHeight);
         third.style.backgroundPositionY = offset * -0.25 + "px";
-    }
-    else{
-
     }
 });
 
