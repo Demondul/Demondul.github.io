@@ -1,460 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="A portfolio website of Mr. Carlo Del Mundo.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="author" content="Carlo Del Mundo" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Carlo Del Mundo</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
-        <link rel="stylesheet" href="bower_components/components-font-awesome/css/fontawesome-all.min.css">
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $(this).scrollTop(0);
-                $("nav a").click(function(e){
-                    e.preventDefault();
-                    var goTo = $(this).attr("href");
-                    $("html, body").animate({scrollTop:$(goTo).offset().top},600);
-                })
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A portfolio website of Mr. Carlo Del Mundo.">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Carlo Del Mundo" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carlo Del Mundo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/fontawesome-all.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+            $("nav a").click(function (e) {
+                e.preventDefault();
+                var goTo = $(this).attr("href");
+                $("html, body").animate({ scrollTop: $(goTo).offset().top }, 600);
             })
-        </script>
-    </head>
-    <body>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-            <span id="side-nav-switch" onclick="openNav()">&#9776;</span>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#Home">Home</a>
-                <a href="#About">About</a>
-                <a href="#Skills">Skills</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Contact">Contact</a>
-            </div>
-        </nav>
-        <main>
-            <div class="bg-div" id='Home'>
-                <h1> 
-                    <p> Carlo Del Mundo </p>
-                    <span>
-                        <p> Software Engineer</p>
-                    </span>
-                </h1>
-            </div>
-            <div class="bg-div" id='About'>
-                <h3 class="bg-div-header bg-primary text-white p-2"> <i class="fas fa-bookmark" aria-hidden="true"></i> About Me</h3>
-                <header class="text-center p-sm-2 p-md-3 p-lg-5">
-                    <h1>This is me, Carlo.</h1>
-                    <div>
-                        <img class="round-pic" src="img/me.png" alt="">
-                    </div>
-                </header>
-                <section class="bg-light p-sm-2 p-md-3 p-lg-5 my-3">
-                    <p class="text-dark">
-                        Hello! Im Carlo and I’m a software engineer. 
-                        My career path changed when I moved from my home country, the Philippines, to the United States, year 2013. 
-                        But my true passion is in programming so I decided to not only shift back but also to improve and update my 
-                        skills as a programmer. After a lot of research I decided to enroll myself in one of the top coding bootcamps 
-                        in the country, Coding Dojo. 
-                    </p>
-                    <p class="text-dark">
-                        Finishing the program, I was satisfied with what I learned and the new skills I acquired that it made me more 
-                        confident and ready to tackle new challenges in programming professionally. Apart from programming, I love solving 
-                        puzzles, playing chess, playing computer games like Dota2, CS:Go, PUBG, and Magic The Gathering. 
-                        I also like going out on hikes, camping in the mountains, swimming in the ocean, traveling, and martial arts to 
-                        keep myself physically fit. And sometimes you'll find me playing music with a guitar or piano if not I'm probably drawing.
-                    </p>
-                </section>
-            </div>
+        })
+    </script>
+</head>
 
-            <div class="bg-div" id='Third'>    
-            </div>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <span id="side-nav-switch" onclick="openNav()">&#9776;</span>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </nav>
+    <main>
+        <div class="bg-div" id='Home'>
+            <h1>
+                <p> Carlo Del Mundo </p>
+                <span>
+                    <p> Software Engineer</p>
+                </span>
+            </h1>
+        </div>
+        <div class="bg-div" id='About'>
+            <h3 class="bg-div-header bg-primary text-white p-2"> <i class="fas fa-bookmark" aria-hidden="true"></i>
+                About Me</h3>
+            <header class="text-center p-sm-2 p-md-3 p-lg-5">
+                <h1>This is me, Carlo.</h1>
+                <div>
+                    <img class="round-pic" src="img/me.png" alt="">
+                </div>
+            </header>
+            <section class="bg-light p-sm-2 p-md-3 p-lg-5 my-3">
+                <p class="text-dark">
+                    Hello! Im Carlo and I’m a software engineer.
+                    My career path changed when I moved from my home country, the Philippines, to the United States,
+                    year 2013.
+                    But my true passion is in programming so I decided to not only shift back but also to improve and
+                    update my
+                    skills as a programmer. After a lot of research I decided to enroll myself in one of the top coding
+                    bootcamps
+                    in the country, Coding Dojo.
+                </p>
+                <p class="text-dark">
+                    Finishing the program, I was satisfied with what I learned and the new skills I acquired that it
+                    made me more
+                    confident and ready to tackle new challenges in programming professionally. Apart from programming,
+                    I love solving
+                    puzzles, playing chess, playing computer games like Dota2, CS:Go, PUBG, and Magic The Gathering.
+                    I also like going out on hikes, camping in the mountains, swimming in the ocean, traveling, and
+                    martial arts to
+                    keep myself physically fit. And sometimes you'll find me playing music with a guitar or piano if not
+                    I'm probably drawing.
+                </p>
+            </section>
+        </div>
 
-            <div class="bg-div" id='Skills'>
-                <h3 class="bg-div-header bg-primary text-white p-2"> <i class="fas fa-bookmark" aria-hidden="true"></i> Technical Skills</h3>
-                <section class="bg-light p-1 my-3">
-                    <div class="row">
-                        <div class="skill col-xl-2">
-                            <header class="bg-primary text-white p-1 text-center">
-                                Language
-                            </header>
-                            <ul>
-                                <li>Javascript (Vanilla/ES5/ES6)</li>
-                                <li>Python</li>
-                                <li>iOS Swift</li>
-                                <li>C#.Net</li>
-                                <li>VB.Net</li>
-                                <li>Java</li>
-                                <li>C++</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                        <div class="skill col-xl-2">
-                            <header class="bg-primary text-white p-1 text-center">
-                                Database
-                            </header>
-                            <ul>
-                                <li>MySQL</li>
-                                <li>MS SQL Server</li>
-                                <li>MongoDB</li>
-                                <li>CoreData</li>
-                            </ul>
-                        </div>
-                        <div class="skill col-xl-2">
-                            <header class="bg-primary text-white p-1 text-center">
-                                Front End
-                            </header>
-                            <ul>
-                                <li>Angular6</li>
-                                <li>JQuery</li>
-                                <li>EJS</li>
-                                <li>Jinja2</li>
-                                <li>ASP.Net</li>
-                                <li>Bootstrap</li>
-                                <li>Bulma</li>
-                                <li>Materialize</li>
-                                <li>Animate.css</li>
-                                <li>SASS</li>
-                            </ul>
-                        </div>
-                        <div class="skill col-xl-2">
-                            <header class="bg-primary text-white p-1 text-center">
-                                Back End
-                            </header>
-                            <ul>
-                                <li>Node.js</li>
-                                <li>Express.js</li>
-                                <li>socket.io</li>
-                                <li>Django</li>
-                                <li>Flask</li>
-                            </ul>
-                        </div>
-                        <div class="skill col-xl-2">
-                            <header class="bg-primary text-white p-1 text-center">
-                                Methodology
-                            </header>
-                            <ul>
-                                <li>Responsive Web Design</li>
-                                <li>Object Oriented Programming</li>
-                                <li>Model-View-Controller (MVC)</li>
-                                <li>AJAX</li>
-                                <li>RESTful API Architecture</li>
-                                <li>CRUD Operations</li>
-                                <li>Test-Driven Development (TDD)</li>
-                                <li>Agile</li>
-                            </ul>
-                        </div>
-                        <div class="skill col-xl-2">
-                            <header class="bg-primary text-white p-1 text-center">
-                                Development & Deployment
-                            </header>
-                            <ul>
-                                <li>AWS (EC2)</li>
-                                <li>Gunicorn</li>
-                                <li>NGINX</li>
-                                <li>Github</li>
-                                <li>Postman</li>
-                                <li>XCode</li>
-                                <li>Visual Studio Code</li>
-                                <li>Visual Studio .Net 2008</li>
-                                <li>Jasmine</li>
-                            </ul>
-                        </div>
+        <div class="bg-div" id='Third'>
+        </div>
+
+        <div class="bg-div" id='Skills'>
+            <h3 class="bg-div-header bg-primary text-white p-2"> <i class="fas fa-bookmark" aria-hidden="true"></i>
+                Technical Skills</h3>
+            <section class="bg-light p-1 my-3">
+                <div class="row">
+                    <div class="skill col-xl-2">
+                        <header class="bg-primary text-white p-1 text-center">
+                            Language
+                        </header>
+                        <ul>
+                            <li>Javascript (Vanilla/ES5/ES6)</li>
+                            <li>Python</li>
+                            <li>iOS Swift</li>
+                            <li>C#.Net</li>
+                            <li>VB.Net</li>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>SQL</li>
+                        </ul>
                     </div>
-                </section>
-                <section class="bg-light p-1 my-2">
-                    <div class="row">
-                        <div class="skill col-xl-12">
-                            <header class="bg-primary text-white p-1">
-                                My Expertise
-                            </header>
-                            <div class="row p-3">
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        HTML 5
-                                    </header>
-                                    <img src="img/lang-imgs/HTML.png" alt="HTML 5">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        CSS 3
-                                    </header>
-                                    <img src="img/lang-imgs/CSS.png" alt="CSS 3">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        JavaScript
-                                    </header>
-                                    <img src="img/lang-imgs/JavaScript.png" alt="Javascript">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        JQuery
-                                    </header>
-                                    <img src="img/lang-imgs/jQuery.png" alt="JQuery">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        AJAX
-                                    </header>
-                                    <img src="img/lang-imgs/ajax.png" alt="Ajax">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Sokets.IO
-                                    </header>
-                                    <img src="img/lang-imgs/socket.png" alt="Socket.io">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Express.js
-                                    </header>
-                                    <img src="img/lang-imgs/expressjs.png" alt="Express.js">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Angular6
-                                    </header>
-                                    <img src="img/lang-imgs/angular.png" alt="Angular6">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Node.js
-                                    </header>
-                                    <img src="img/lang-imgs/nodejs.png" alt="Node.JS">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        MEAN Stack
-                                    </header>
-                                    <img src="img/lang-imgs/MEAN.png" alt="MEAN">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Python
-                                    </header>
-                                    <img src="img/lang-imgs/python.png" alt="Python">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Django
-                                    </header>
-                                    <img src="img/lang-imgs/django.png" alt="Django">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        C#.Net
-                                    </header>
-                                    <img src="img/lang-imgs/c-sharp.png" alt="Django">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        iOS Swift
-                                    </header>
-                                    <img src="img/lang-imgs/iOS-Swift.png" alt="iOS Swift">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Bootstrap
-                                    </header>
-                                    <img src="img/lang-imgs/bootstrap.png" alt="Bootstrap">
-                                </div>
-                                <div class="inline-div my-1 skill-exp">
-                                    <header class="bg-primary text-white text-center">
-                                        Materialize
-                                    </header>
-                                    <img src="img/lang-imgs/materialize.png" alt="Materialize">
-                                </div>
+                    <div class="skill col-xl-2">
+                        <header class="bg-primary text-white p-1 text-center">
+                            Database
+                        </header>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>MS SQL Server</li>
+                            <li>MongoDB</li>
+                            <li>CoreData</li>
+                        </ul>
+                    </div>
+                    <div class="skill col-xl-2">
+                        <header class="bg-primary text-white p-1 text-center">
+                            Front End
+                        </header>
+                        <ul>
+                            <li>Angular6</li>
+                            <li>JQuery</li>
+                            <li>EJS</li>
+                            <li>Jinja2</li>
+                            <li>ASP.Net</li>
+                            <li>Bootstrap</li>
+                            <li>Bulma</li>
+                            <li>Materialize</li>
+                            <li>Animate.css</li>
+                            <li>SASS</li>
+                        </ul>
+                    </div>
+                    <div class="skill col-xl-2">
+                        <header class="bg-primary text-white p-1 text-center">
+                            Back End
+                        </header>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>socket.io</li>
+                            <li>Django</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                    <div class="skill col-xl-2">
+                        <header class="bg-primary text-white p-1 text-center">
+                            Methodology
+                        </header>
+                        <ul>
+                            <li>Responsive Web Design</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Model-View-Controller (MVC)</li>
+                            <li>AJAX</li>
+                            <li>RESTful API Architecture</li>
+                            <li>CRUD Operations</li>
+                            <li>Test-Driven Development (TDD)</li>
+                            <li>Agile</li>
+                        </ul>
+                    </div>
+                    <div class="skill col-xl-2">
+                        <header class="bg-primary text-white p-1 text-center">
+                            Development & Deployment
+                        </header>
+                        <ul>
+                            <li>AWS (EC2)</li>
+                            <li>Gunicorn</li>
+                            <li>NGINX</li>
+                            <li>Github</li>
+                            <li>Postman</li>
+                            <li>XCode</li>
+                            <li>Visual Studio Code</li>
+                            <li>Visual Studio .Net 2008</li>
+                            <li>Jasmine</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-light p-1 my-2">
+                <div class="row">
+                    <div class="skill col-xl-12">
+                        <header class="bg-primary text-white p-1">
+                            My Expertise
+                        </header>
+                        <div class="row p-3">
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    HTML 5
+                                </header>
+                                <img src="img/lang-imgs/HTML.png" alt="HTML 5">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    CSS 3
+                                </header>
+                                <img src="img/lang-imgs/CSS.png" alt="CSS 3">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    JavaScript
+                                </header>
+                                <img src="img/lang-imgs/JavaScript.png" alt="Javascript">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    JQuery
+                                </header>
+                                <img src="img/lang-imgs/jQuery.png" alt="JQuery">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    AJAX
+                                </header>
+                                <img src="img/lang-imgs/ajax.png" alt="Ajax">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Sokets.IO
+                                </header>
+                                <img src="img/lang-imgs/socket.png" alt="Socket.io">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Express.js
+                                </header>
+                                <img src="img/lang-imgs/expressjs.png" alt="Express.js">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Angular6
+                                </header>
+                                <img src="img/lang-imgs/angular.png" alt="Angular6">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Node.js
+                                </header>
+                                <img src="img/lang-imgs/nodejs.png" alt="Node.JS">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    MEAN Stack
+                                </header>
+                                <img src="img/lang-imgs/MEAN.png" alt="MEAN">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Python
+                                </header>
+                                <img src="img/lang-imgs/python.png" alt="Python">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Django
+                                </header>
+                                <img src="img/lang-imgs/django.png" alt="Django">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    C#.Net
+                                </header>
+                                <img src="img/lang-imgs/c-sharp.png" alt="Django">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    iOS Swift
+                                </header>
+                                <img src="img/lang-imgs/iOS-Swift.png" alt="iOS Swift">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Bootstrap
+                                </header>
+                                <img src="img/lang-imgs/bootstrap.png" alt="Bootstrap">
+                            </div>
+                            <div class="inline-div my-1 skill-exp">
+                                <header class="bg-primary text-white text-center">
+                                    Materialize
+                                </header>
+                                <img src="img/lang-imgs/materialize.png" alt="Materialize">
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+        </div>
 
-            <div class="bg-div" id='Fifth'>
-            </div>
+        <div class="bg-div" id='Fifth'>
+        </div>
 
-            <div class="bg-div" id='Projects'>
-                <h3 class="bg-div-header bg-primary text-white p-2"> <i class="fas fa-bookmark" aria-hidden="true"></i> Projects</h3>
-                <section class="bg-light p-1 my-3">
-                    <div class="">
-                        <div class="row">
-                    
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div id="my-carousel" class="carousel slide" data-ride="carousel" >
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#my-carousel" data-slide-to="1"></li>
-                                    </ol>
+        <div class="bg-div" id='Projects'>
+            <h3 class="bg-div-header bg-primary text-white p-2"> <i class="fas fa-bookmark" aria-hidden="true"></i>
+                Projects</h3>
+            <section class="bg-light p-1 my-3">
+                <div class="">
+                    <div class="row">
 
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="carousel-item active">
-                                            <div class="row bg-dark text-light">
-                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item">
-                                                    <img src="img/ChiesCakes.gif" alt="Chie's Cakes">
-                                                </div>
-                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item p-sm-2 p-md-3 p-lg-5">
-                                                    <p class="text-justify"> 
-                                                        <span class="text-info">Description:</span> An e-commerce website that can take orders and reservation
-                                                        of personalized cakes of customers. Customers can post reviews and rating
-                                                        of their experience with the cake. It also has an admin page that manages 
-                                                        the website's pictures, captions, and marketing pitch.
-                                                    </p>
-                                                    <p>
-                                                        <span class="text-info">Programming Language:</span> Python3, Javasctipt, HTML5, CSS3
-                                                    </p>
-                                                    <p>
-                                                        <span class="text-info">Framework:</span> Django, BCrypt, iCalendar, Pillow, JQuery, Bootstrap3
-                                                    </p>
-                                                    <p>
-                                                        <span class="text-info">Website:</span> <a href="http://13.59.157.242" target="_blank">http://13.59.157.242</a>
-                                                    </p>
-                                                </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#my-carousel" data-slide-to="1"></li>
+                                </ol>
+
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <div class="row bg-dark text-light">
+                                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item">
+                                                <img src="img/ChiesCakes.gif" alt="Chie's Cakes">
                                             </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div class="row bg-dark text-light">
-                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item">
-                                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OK6GCVKpydc">
-                                                    </iframe>
-                                                </div>
-                                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item p-sm-2 p-md-3 p-lg-5">
-                                                    <p class="text-justify> 
-                                                        <span class="text-info">Description:</span> An Arduino R3 robot car that is controlled by an iOS App
-                                                        through bluetooth technology that can move in all directions. It also has an autopilot feature that 
-                                                        drives itself forward and it stops on time to prevent collision and driving away to whatever is in front
-                                                        of the car. The Arduino R3 robot car is programmed written in C++.
-                                                    </p>
-                                                    <p>
-                                                        <span class="text-info">Programming Language:</span> C++, iOS Swift
-                                                    </p>
-                                                    <p>
-                                                        <span class="text-info">Framework:</span> CoreBluetooth, Servo
-                                                    </p>
-                                                    <p>
-                                                        <span class="text-info">Hardware:</span> Arduino R3 Car Kit
-                                                    </p>
-                                                </div>
+                                            <div
+                                                class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item p-sm-2 p-md-3 p-lg-5">
+                                                <p class="text-justify">
+                                                    <span class="text-info">Description:</span> An e-commerce website
+                                                    that can take orders and reservation
+                                                    of personalized cakes of customers. Customers can post reviews and
+                                                    rating
+                                                    of their experience with the cake. It also has an admin page that
+                                                    manages
+                                                    the website's pictures, captions, and marketing pitch.
+                                                </p>
+                                                <p>
+                                                    <span class="text-info">Programming Language:</span> Python3,
+                                                    Javasctipt, HTML5, CSS3
+                                                </p>
+                                                <p>
+                                                    <span class="text-info">Framework:</span> Django, BCrypt, iCalendar,
+                                                    Pillow, JQuery, Bootstrap3
+                                                </p>
+                                                <p>
+                                                    <span class="text-info">Website:</span> <a
+                                                        href="http://13.59.157.242"
+                                                        target="_blank">http://13.59.157.242</a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <a href="#my-carousel" class="carousel-control-prev text-dark" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    </a>
-                                    <a href="#my-carousel" class="carousel-control-next text-dark" data-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </a>
+                                    <div class="carousel-item">
+                                        <div class="row bg-dark text-light">
+                                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item">
+                                                <iframe width="100%" height="100%"
+                                                    src="https://www.youtube.com/embed/OK6GCVKpydc">
+                                                </iframe>
+                                            </div>
+                                            <div
+                                                class="col-sm-12 col-md-12 col-lg-12 col-xl-6 project-item p-sm-2 p-md-3 p-lg-5">
+                                                <p class="text-justify> 
+                                                        <span class=" text-info">Description:</span> An Arduino R3
+                                                    robot car that is controlled by an iOS App
+                                                    through bluetooth technology that can move in all directions. It
+                                                    also has an autopilot feature that
+                                                    drives itself forward and it stops on time to prevent collision and
+                                                    driving away to whatever is in front
+                                                    of the car. The Arduino R3 robot car is programmed written in C++.
+                                                </p>
+                                                <p>
+                                                    <span class="text-info">Programming Language:</span> C++, iOS Swift
+                                                </p>
+                                                <p>
+                                                    <span class="text-info">Framework:</span> CoreBluetooth, Servo
+                                                </p>
+                                                <p>
+                                                    <span class="text-info">Hardware:</span> Arduino R3 Car Kit
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
 
+                                <a href="#my-carousel" class="carousel-control-prev text-dark" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </a>
+                                <a href="#my-carousel" class="carousel-control-next text-dark" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="bg-div" id='Seventh'>
+        </div>
+
+        <div class="bg-div" id='Contact'>
+            <h3 class="bg-div-header bg-primary text-white p-2"> <span class="fas fa-bookmark"
+                    aria-hidden="true"></span> Contact Details</h3>
+            <section class="bg-light p-1 my-3">
+                <div class="container">
+                    <div class="row my-3">
+                        <div class="col-md-3 contact-icon">
+                            <a href="https://www.linkedin.com/in/delmundo-carlo/" target="_blank">
+                                <p>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </p>
+                                <p class="contact-label">
+                                    LinkedIn
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 contact-icon">
+                            <a href="https://codepen.io/CarloDM/" target="_blank">
+                                <p>
+                                    <i class="fab fa-codepen"></i>
+                                </p>
+                                <p class="contact-label">
+                                    Codepen
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 contact-icon">
+                            <a href="https://github.com/Demondul" target="_blank">
+                                <p>
+                                    <i class="fab fa-github"></i>
+                                </p>
+                                <p class="contact-label">
+                                    Github
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 contact-icon">
+                            <a href="https://www.dropbox.com/s/6kwso7inozqaa7t/Carlo%20O%20Del%20Mundo%20Resume.docx?dl=0"
+                                target="_blank">
+                                <p>
+                                    <i class="fab fa-dropbox"></i>
+                                </p>
+                                <p class="contact-label">
+                                    My Resume
+                                </p>
+                            </a>
                         </div>
                     </div>
-                </section>
-            </div>
-
-            <div class="bg-div" id='Seventh'>    
-            </div>
-            
-            <div class="bg-div" id='Contact'>
-                <h3 class="bg-div-header bg-primary text-white p-2"> <span class="fas fa-bookmark" aria-hidden="true"></span> Contact Details</h3>
-                <section class="bg-light p-1 my-3">
-                    <div class="container">
-                        <div class="row my-3">
-                            <div class="col-md-3 contact-icon">
-                                <a href="https://www.linkedin.com/in/delmundo-carlo/" target="_blank"> 
-                                    <p>
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </p>
-                                    <p class="contact-label">
-                                        LinkedIn
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="col-md-3 contact-icon">
-                                <a href="https://codepen.io/CarloDM/" target="_blank"> 
-                                    <p>
-                                        <i class="fab fa-codepen"></i>
-                                    </p>
-                                    <p class="contact-label">
-                                        Codepen
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="col-md-3 contact-icon">
-                                <a href="https://github.com/Demondul" target="_blank"> 
-                                    <p>
-                                        <i class="fab fa-github"></i>
-                                    </p>
-                                    <p class="contact-label">
-                                        Github
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="col-md-3 contact-icon">
-                                <a href="https://www.dropbox.com/s/6i1ile85ovui5lb/Carlo%20O%20Del%20Mundo%20Resume.docx?dl=0" target="_blank"> 
-                                    <p>
-                                        <i class="fab fa-dropbox"></i>
-                                    </p>
-                                    <p class="contact-label">
-                                        My Resume
-                                    </p>
-                                    </a>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-3 offset-md-3 contact-icon">
+                            <a href="mailto:carlo.o.delmundo@gmail.com">
+                                <p>
+                                    <i class="fas fa-paper-plane"></i>
+                                </p>
+                                <p class="contact-label">
+                                    carlo.o.delmundo@gmail.com
+                                </p>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-md-3 offset-md-3 contact-icon">
-                                <a href="mailto:carlo.o.delmundo@gmail.com">
-                                    <p>
-                                        <i class="fas fa-paper-plane"></i>
-                                    </p>
-                                    <p class="contact-label">
-                                        carlo.o.delmundo@gmail.com
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="col-md-3 contact-icon">
-                                <a href="tel:+17075671747">
-                                    <p>
-                                        <i class="fas fa-phone"></i>
-                                    </p>
-                                    <p class="contact-label">
-                                        +1 (707) 567-1747
-                                    </p>
-                                </a>
-                            </div>
+                        <div class="col-md-3 contact-icon">
+                            <a href="tel:+17075671747">
+                                <p>
+                                    <i class="fas fa-phone"></i>
+                                </p>
+                                <p class="contact-label">
+                                    +1 (707) 567-1747
+                                </p>
+                            </a>
                         </div>
                     </div>
-                </section>
-            </div>
-            <script src="bower_components/particles.js/particles.min.js"></script>
-            <script src="javascript/app.js"></script>
-        </main>
-        <script src="javascript/main.js"></script>
-    </body>
+                </div>
+            </section>
+        </div>
+        <script src="bower_components/particles.js/particles.min.js"></script>
+        <script src="javascript/app.js"></script>
+    </main>
+    <script src="javascript/main.js"></script>
+</body>
+
 </html>
